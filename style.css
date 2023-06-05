@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100;200&family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 65px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background: black;
+    color:black;
+    font-family:'Ubuntu', sans-serif; 
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(img/Background\ image.jpg);
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 80vw;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.icons i{
+    margin:18px 8px;
+    cursor:pointer;
+    
+}
+
+.songItemContainer{
+    margin-top: 65px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color:black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    font-size: 20px;
+}
+
+.songItem a{
+    text-decoration: none;
+    color: black;
+}
+
+.bgcolor{
+    background-color: rgb(87, 77, 77);
+}
+
+
+.songItem img{
+    width: 49px;
+    margin: 0 23px;
+    border-radius: 4px;
+    height:45px;
+}
+.timestamp i{
+    margin:0 22px;
+    cursor: pointer;
+}
+.songInfo {
+    position: absolute;
+    left: 25vh;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+.songInfo p{
+    font-size: 30px;
+    margin-top: 29px;
+    font-family:'Ubuntu', sans-serif; 
+}
+.songInfo h4 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(90, 189, 231, 0.966);
+    margin-top: 6px;
+}
+
+.sw{
+ display : none;
+}
