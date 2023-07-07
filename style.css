@@ -70,6 +70,21 @@ nav ul li{
     cursor: pointer;
 }
 
+.volume-control{
+    position: absolute;
+    right: 21vh;
+    margin-top: 20px;
+   height: 2px;
+}
+
+.num{
+    display: none;
+}
+
+.fa-volume-up{
+    margin-right: 4px;
+}
+
 .icons i{
     margin:18px 8px;
     cursor:pointer;
@@ -132,22 +147,6 @@ nav ul li{
     color: rgba(90, 189, 231, 0.966);
     margin-top: 6px;
 }
-
-.volume-control{
-    position: absolute;
-    right: 21vh;
-    margin-top: 20px;
-   height: 2px;
-}
-
-.num{
-    display: none;
-}
-
-.fa-volume-up{
-    margin-right: 4px;
-}
-
 
 .sw{
  display : none;
