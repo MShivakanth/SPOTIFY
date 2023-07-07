@@ -137,9 +137,7 @@ nav ul li{
     position: absolute;
     right: 21vh;
     margin-top: 20px;
-    vertical-align: middle;
-  -webkit-appearance: slider-vertical;
-  height: 2px;
+   height: 2px;
 }
 
 .num{
