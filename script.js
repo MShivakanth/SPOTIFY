@@ -1,6 +1,7 @@
 console.log("Welcome to Spotify");
 
 // Innitial tha Variable
+
 let songIndex= 0;
 let audioElement = new  Audio("songs/0.mp3");
 let masterPlay = document.getElementById('masterPlay');
@@ -8,6 +9,10 @@ let cover = document.getElementById("cover");
 let myProgressBar = document.getElementById("myProgressBar");
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 let soundwave = document.getElementsByClassName("sw");
+let play = document.querySelector(".play");
+let audio = document.querySelector("#aud");
+let vol = document.querySelector("#vol");
+let numm = document.querySelector(".num");
 
 
 let songs = [
@@ -35,6 +40,11 @@ songItems.forEach((element, i) => {
 
 masterPlay.addEventListener('click', ()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
+    audioElement.src = "songs/"+[songIndex]+".mp3";
+    vol.oninput = function(){
+    audioElement.volume = vol.value/100;
+    numm.innerHTML = vol.value;
+    } 
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause');
@@ -74,6 +84,8 @@ const makeAllPlays = ()=>{
     })
 }
 
+// controls  of songlisted in bar
+
 Array.from(document.getElementsByClassName("songitemPlay")).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         if(audioElement.paused || audioElement.currentTime<=0){
@@ -99,6 +111,8 @@ Array.from(document.getElementsByClassName("songitemPlay")).forEach((element)=>{
     })
 })
 
+// Next button at bottom
+
 document.getElementById("next").addEventListener('click', ()=>{
     document.querySelector("p").innerHTML = songs[songIndex+1].songName;
     document.querySelector("h4").innerHTML = songs[songIndex+1].moviename;
@@ -117,6 +131,8 @@ document.getElementById("next").addEventListener('click', ()=>{
         
 })
 
+// Previous button at Bottom
+
 document.getElementById("previous").addEventListener('click', ()=>{
     document.querySelector("p").innerHTML = songs[songIndex-1].songName;
     if(songIndex<=0){
@@ -131,3 +147,6 @@ document.getElementById("previous").addEventListener('click', ()=>{
         masterPlay.classList.add("fa-pause");
         
 })
+
+// Volume Control
+

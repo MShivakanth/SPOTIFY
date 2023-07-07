@@ -133,6 +133,24 @@ nav ul li{
     margin-top: 6px;
 }
 
+.volume-control{
+    position: absolute;
+    right: 21vh;
+    margin-top: 20px;
+    vertical-align: middle;
+  -webkit-appearance: slider-vertical;
+  height: 2px;
+}
+
+.num{
+    display: none;
+}
+
+.fa-volume-up{
+    margin-right: 4px;
+}
+
+
 .sw{
  display : none;
 }
